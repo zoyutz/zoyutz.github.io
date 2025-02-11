@@ -1,0 +1,282 @@
+﻿{
+  "WatchFace_Info": {
+    "DeviceName": "Balance",
+    "WatchFaceId": 5146714,
+    "Preview": "Preview"
+  },
+  "ScreenNormal": {
+    "Background": {
+      "visible": true,
+      "BackgroundImage": {
+        "position": -1,
+        "visible": true,
+        "show_level": "ONLY_NORMAL",
+        "x": 0,
+        "y": 0,
+        "w": 480,
+        "h": 480,
+        "src": "bg",
+        "alpha": 255
+      }
+    },
+    "Elements": [
+      {
+        "elementName": "DigitalTime_v2",
+        "visible": true,
+        "Group_Minute": {
+          "position": 3,
+          "Number": {
+            "position": -1,
+            "visible": true,
+            "align": "LEFT",
+            "show_level": "ONLY_NORMAL",
+            "imageX": -313,
+            "imageY": 190,
+            "space": 309,
+            "zero": true,
+            "img_First": "M2_0",
+            "unit": "",
+            "imperial_unit": "",
+            "icon": "",
+            "iconPosX": 0,
+            "iconPosY": 0,
+            "invalid_image": "",
+            "dot_image": "",
+            "angle": 0,
+            "follow": false,
+            "unit_in_alignment": false,
+            "alpha": 255,
+            "icon_alpha": 255
+          },
+          "Text_rotation": {
+            "position": -1,
+            "visible": true,
+            "align": "LEFT",
+            "show_level": "",
+            "imageX": 90,
+            "imageY": 288,
+            "space": 515,
+            "zero": true,
+            "img_First": "M1_0",
+            "iconPosX": 0,
+            "iconPosY": 0,
+            "angle": 0,
+            "follow": false,
+            "unit_in_alignment": false,
+            "alpha": 255,
+            "icon_alpha": 255
+          }
+        },
+        "Group_Hour": {
+          "position": 1,
+          "Number": {
+            "position": -1,
+            "visible": true,
+            "align": "LEFT",
+            "show_level": "ONLY_NORMAL",
+            "imageX": 75,
+            "imageY": 43,
+            "space": 515,
+            "zero": true,
+            "img_First": "H1_0",
+            "unit": "",
+            "imperial_unit": "",
+            "icon": "",
+            "iconPosX": 0,
+            "iconPosY": 0,
+            "invalid_image": "",
+            "dot_image": "",
+            "angle": 0,
+            "follow": false,
+            "unit_in_alignment": false,
+            "alpha": 255,
+            "icon_alpha": 255
+          },
+          "Text_rotation": {
+            "position": -1,
+            "visible": true,
+            "align": "LEFT",
+            "show_level": "",
+            "imageX": -416,
+            "imageY": 43,
+            "space": 412,
+            "zero": true,
+            "img_First": "H2_0",
+            "unit": "",
+            "imperial_unit": "",
+            "iconPosX": 0,
+            "iconPosY": 0,
+            "negative_image": "",
+            "invalid_image": "",
+            "dot_image": "",
+            "separator_image": "",
+            "angle": 0,
+            "follow": false,
+            "unit_in_alignment": false,
+            "alpha": 255,
+            "icon_alpha": 255
+          }
+        }
+      },
+      {
+        "elementName": "ElementFatBurning",
+        "visible": true,
+        "Icon": {
+          "position": 1,
+          "visible": true,
+          "show_level": "",
+          "x": 0,
+          "y": 0,
+          "src": "mask",
+          "alpha": 255
+        }
+      },
+      {
+        "elementName": "ElementStatuses",
+        "visible": true,
+        "Alarm": {
+          "position": 2,
+          "visible": true,
+          "show_level": "ONLY_NORMAL",
+          "x": 426,
+          "y": 211,
+          "src": "0027",
+          "alpha": 255,
+          "type": "Alarm"
+        },
+        "Bluetooth": {
+          "position": 1,
+          "visible": true,
+          "show_level": "ONLY_NORMAL",
+          "x": 25,
+          "y": 207,
+          "src": "0003",
+          "alpha": 255,
+          "type": "Bluetooth"
+        }
+      }
+    ]
+  },
+  "ScreenAOD": {},
+  "Buttons": {
+    "enable": true,
+    "Button": [
+      {
+        "x": 21,
+        "y": 196,
+        "h": 88,
+        "w": 100,
+        "text": "",
+        "color": "0xFFFF8C00",
+        "text_size": 25,
+        "press_src": "null",
+        "normal_src": "null",
+        "press_color": "0xFFA0A0A0",
+        "normal_color": "0xFF696969",
+        "radius": 12,
+        "click_func": "hmApp.startApp({url: 'Settings_lightAdjustScreen', native: true });",
+        "longpress_func": "",
+        "visible": true
+      },
+      {
+        "x": 154,
+        "y": 256,
+        "h": 122,
+        "w": 188,
+        "text": "",
+        "color": "0xFFFF8C00",
+        "text_size": 25,
+        "press_src": "null",
+        "normal_src": "null",
+        "press_color": "0xFFA0A0A0",
+        "normal_color": "0xFF696969",
+        "radius": 12,
+        "click_func": "hmApp.startApp({url: 'TomatoMainScreen', native: true });",
+        "longpress_func": "",
+        "visible": true
+      },
+      {
+        "x": 190,
+        "y": 440,
+        "h": 88,
+        "w": 100,
+        "text": "",
+        "color": "0xFFFF8C00",
+        "text_size": 25,
+        "press_src": "null",
+        "normal_src": "null",
+        "press_color": "0xFFA0A0A0",
+        "normal_color": "0xFF696969",
+        "radius": 12,
+        "click_func": "hmApp.startApp({url: 'activityAppScreen', native: true });",
+        "longpress_func": "hmApp.startApp({url: 'PowerSaveHintScreen', native: true });",
+        "visible": true
+      },
+      {
+        "x": 145,
+        "y": 109,
+        "h": 124,
+        "w": 192,
+        "text": "",
+        "color": "0xFFFF8C00",
+        "text_size": 25,
+        "press_src": "transparent_img",
+        "normal_src": "transparent_img",
+        "press_color": "0xFFA0A0A0",
+        "normal_color": "0xFF696969",
+        "radius": 12,
+        "click_func": "hmApp.startApp({url: 'AlarmInfoScreen', native: true });",
+        "longpress_func": "",
+        "visible": true
+      }
+    ]
+  },
+  "SwitchBackground": {
+    "enable": true,
+    "Button": {
+      "x": 190,
+      "y": 7,
+      "h": 40,
+      "w": 100,
+      "text": "",
+      "color": "0xFFFF8C00",
+      "text_size": 25,
+      "press_src": "transparent_img",
+      "normal_src": "transparent_img",
+      "press_color": "0xFFA0A0A0",
+      "normal_color": "0xFF696969",
+      "radius": 12,
+      "click_func": "switchBackground();",
+      "longpress_func": "",
+      "visible": true
+    },
+    "bg_list": [
+      "bg",
+      "bg1",
+      "bg2",
+      "bg3",
+      "bg4",
+      "bg5",
+      "bg6",
+      "bg7",
+      "bg8",
+      "bg9"
+    ],
+    "toast_list": [
+      "Фон %s",
+      "Фон %s",
+      "Фон %s",
+      "Фон %s",
+      "Фон %s",
+      "Фон %s",
+      "Фон %s",
+      "Фон %s",
+      "Фон %s",
+      "Фон %s"
+    ],
+    "use_crown": false,
+    "use_in_AOD": false,
+    "vibro": false,
+    "select_index": 4
+  }
+}
